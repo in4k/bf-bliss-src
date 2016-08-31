@@ -1,0 +1,110 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Engine", "Engine\Engine.vcxproj", "{CCF13486-5C89-4905-832E-C6C83230DA29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tweaky", "Tweaky\Tweaky.csproj", "{2C4744F2-FEAC-450E-B5C1-195F8F4E3B8E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Compress|Any CPU = Compress|Any CPU
+		Compress|Mixed Platforms = Compress|Mixed Platforms
+		Compress|Win32 = Compress|Win32
+		CompressFast|Any CPU = CompressFast|Any CPU
+		CompressFast|Mixed Platforms = CompressFast|Mixed Platforms
+		CompressFast|Win32 = CompressFast|Win32
+		Debug (shader debug)|Any CPU = Debug (shader debug)|Any CPU
+		Debug (shader debug)|Mixed Platforms = Debug (shader debug)|Mixed Platforms
+		Debug (shader debug)|Win32 = Debug (shader debug)|Win32
+		Debug (shader edit)|Any CPU = Debug (shader edit)|Any CPU
+		Debug (shader edit)|Mixed Platforms = Debug (shader edit)|Mixed Platforms
+		Debug (shader edit)|Win32 = Debug (shader edit)|Win32
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+		Video|Any CPU = Video|Any CPU
+		Video|Mixed Platforms = Video|Mixed Platforms
+		Video|Win32 = Video|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCF13486-5C89-4905-832E-C6C83230DA29}.Compress|Any CPU.ActiveCfg = Compress|Win32
+		{CCF13486-5C89-4905-832E-C6C83230DA29}.Compress|Mixed Platforms.ActiveCfg = Compress|Win32
+		{CCF13486-5C89-4905-832E-C6C83230DA29}.Compress|Mixed Platforms.Build.0 = Compress|Win32
+		{CCF13486-5C89-4905-832E-C6C83230DA29}.Compress|Win32.ActiveCfg = Compress|Win32
+		{CCF13486-5C89-4905-832E-C6C83230DA29}.Compress|Win32.Build.0 = Compress|Win32
+		{CCF13486-5C89-4905-832E-C6C83230DA29}.CompressFast|Any CPU.ActiveCfg = CompressFast|Win32
+		{CCF13486-5C89-4905-832E-C6C83230DA29}.CompressFast|Mixed Platforms.ActiveCfg = CompressFast|Win32
+		{CCF13486-5C89-4905-832E-C6C83230DA29}.CompressFast|Mixed Platforms.Build.0 = CompressFast|Win32
+		{CCF13486-5C89-4905-832E-C6C83230DA29}.CompressFast|Win32.ActiveCfg = CompressFast|Win32
+		{CCF13486-5C89-4905-832E-C6C83230DA29}.CompressFast|Win32.Build.0 = CompressFast|Win32
+		{CCF13486-5C89-4905-832E-C6C83230DA29}.Debug (shader debug)|Any CPU.ActiveCfg = Debug|Win32
+		{CCF13486-5C89-4905-832E-C6C83230DA29}.Debug (shader debug)|Mixed Platforms.ActiveCfg = Debug|Win32
+		{CCF13486-5C89-4905-832E-C6C83230DA29}.Debug (shader debug)|Mixed Platforms.Build.0 = Debug|Win32
+		{CCF13486-5C89-4905-832E-C6C83230DA29}.Debug (shader debug)|Win32.ActiveCfg = DebugShader|Win32
+		{CCF13486-5C89-4905-832E-C6C83230DA29}.Debug (shader debug)|Win32.Build.0 = DebugShader|Win32
+		{CCF13486-5C89-4905-832E-C6C83230DA29}.Debug (shader edit)|Any CPU.ActiveCfg = Debug|Win32
+		{CCF13486-5C89-4905-832E-C6C83230DA29}.Debug (shader edit)|Mixed Platforms.ActiveCfg = Debug|Win32
+		{CCF13486-5C89-4905-832E-C6C83230DA29}.Debug (shader edit)|Mixed Platforms.Build.0 = Debug|Win32
+		{CCF13486-5C89-4905-832E-C6C83230DA29}.Debug (shader edit)|Win32.ActiveCfg = Debug|Win32
+		{CCF13486-5C89-4905-832E-C6C83230DA29}.Debug (shader edit)|Win32.Build.0 = Debug|Win32
+		{CCF13486-5C89-4905-832E-C6C83230DA29}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{CCF13486-5C89-4905-832E-C6C83230DA29}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{CCF13486-5C89-4905-832E-C6C83230DA29}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{CCF13486-5C89-4905-832E-C6C83230DA29}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CCF13486-5C89-4905-832E-C6C83230DA29}.Debug|Win32.Build.0 = Debug|Win32
+		{CCF13486-5C89-4905-832E-C6C83230DA29}.Release|Any CPU.ActiveCfg = Release|Win32
+		{CCF13486-5C89-4905-832E-C6C83230DA29}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{CCF13486-5C89-4905-832E-C6C83230DA29}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{CCF13486-5C89-4905-832E-C6C83230DA29}.Release|Win32.ActiveCfg = Release|Win32
+		{CCF13486-5C89-4905-832E-C6C83230DA29}.Release|Win32.Build.0 = Release|Win32
+		{CCF13486-5C89-4905-832E-C6C83230DA29}.Video|Any CPU.ActiveCfg = Video|Win32
+		{CCF13486-5C89-4905-832E-C6C83230DA29}.Video|Mixed Platforms.ActiveCfg = Video|Win32
+		{CCF13486-5C89-4905-832E-C6C83230DA29}.Video|Mixed Platforms.Build.0 = Video|Win32
+		{CCF13486-5C89-4905-832E-C6C83230DA29}.Video|Win32.ActiveCfg = Video|Win32
+		{CCF13486-5C89-4905-832E-C6C83230DA29}.Video|Win32.Build.0 = Video|Win32
+		{2C4744F2-FEAC-450E-B5C1-195F8F4E3B8E}.Compress|Any CPU.ActiveCfg = Release|Any CPU
+		{2C4744F2-FEAC-450E-B5C1-195F8F4E3B8E}.Compress|Any CPU.Build.0 = Release|Any CPU
+		{2C4744F2-FEAC-450E-B5C1-195F8F4E3B8E}.Compress|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{2C4744F2-FEAC-450E-B5C1-195F8F4E3B8E}.Compress|Mixed Platforms.Build.0 = Release|Any CPU
+		{2C4744F2-FEAC-450E-B5C1-195F8F4E3B8E}.Compress|Win32.ActiveCfg = Release|Any CPU
+		{2C4744F2-FEAC-450E-B5C1-195F8F4E3B8E}.CompressFast|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C4744F2-FEAC-450E-B5C1-195F8F4E3B8E}.CompressFast|Any CPU.Build.0 = Debug|Any CPU
+		{2C4744F2-FEAC-450E-B5C1-195F8F4E3B8E}.CompressFast|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{2C4744F2-FEAC-450E-B5C1-195F8F4E3B8E}.CompressFast|Win32.ActiveCfg = Debug|Any CPU
+		{2C4744F2-FEAC-450E-B5C1-195F8F4E3B8E}.Debug (shader debug)|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C4744F2-FEAC-450E-B5C1-195F8F4E3B8E}.Debug (shader debug)|Any CPU.Build.0 = Debug|Any CPU
+		{2C4744F2-FEAC-450E-B5C1-195F8F4E3B8E}.Debug (shader debug)|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{2C4744F2-FEAC-450E-B5C1-195F8F4E3B8E}.Debug (shader debug)|Mixed Platforms.Build.0 = Debug|Any CPU
+		{2C4744F2-FEAC-450E-B5C1-195F8F4E3B8E}.Debug (shader debug)|Win32.ActiveCfg = Debug|Any CPU
+		{2C4744F2-FEAC-450E-B5C1-195F8F4E3B8E}.Debug (shader edit)|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C4744F2-FEAC-450E-B5C1-195F8F4E3B8E}.Debug (shader edit)|Any CPU.Build.0 = Debug|Any CPU
+		{2C4744F2-FEAC-450E-B5C1-195F8F4E3B8E}.Debug (shader edit)|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{2C4744F2-FEAC-450E-B5C1-195F8F4E3B8E}.Debug (shader edit)|Mixed Platforms.Build.0 = Debug|Any CPU
+		{2C4744F2-FEAC-450E-B5C1-195F8F4E3B8E}.Debug (shader edit)|Win32.ActiveCfg = Debug|Any CPU
+		{2C4744F2-FEAC-450E-B5C1-195F8F4E3B8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C4744F2-FEAC-450E-B5C1-195F8F4E3B8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C4744F2-FEAC-450E-B5C1-195F8F4E3B8E}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{2C4744F2-FEAC-450E-B5C1-195F8F4E3B8E}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{2C4744F2-FEAC-450E-B5C1-195F8F4E3B8E}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{2C4744F2-FEAC-450E-B5C1-195F8F4E3B8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C4744F2-FEAC-450E-B5C1-195F8F4E3B8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C4744F2-FEAC-450E-B5C1-195F8F4E3B8E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{2C4744F2-FEAC-450E-B5C1-195F8F4E3B8E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{2C4744F2-FEAC-450E-B5C1-195F8F4E3B8E}.Release|Win32.ActiveCfg = Release|Any CPU
+		{2C4744F2-FEAC-450E-B5C1-195F8F4E3B8E}.Video|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C4744F2-FEAC-450E-B5C1-195F8F4E3B8E}.Video|Any CPU.Build.0 = Debug|Any CPU
+		{2C4744F2-FEAC-450E-B5C1-195F8F4E3B8E}.Video|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{2C4744F2-FEAC-450E-B5C1-195F8F4E3B8E}.Video|Win32.ActiveCfg = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
+	EndGlobalSection
+EndGlobal

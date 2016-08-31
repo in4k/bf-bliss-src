@@ -1,0 +1,185 @@
+﻿<UserControl x:Class="Tweaky.UserControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="74" d:DesignWidth="500">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Border x:Name="SVGradientBorder" Margin="5" BorderThickness="1" CornerRadius="2" Height="64" Width="64">
+            <Border.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFFFFFF" Offset="0" />
+                    <GradientStop Color="#80FFFFFF" Offset="1" />
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+            <Grid>
+                <Border x:Name="PART_SatValImage" Background="{Binding HueBrush, RelativeSource={RelativeSource TemplatedParent}}" />
+                <Border IsHitTestVisible="False">
+                    <Border.Background>
+                        <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                            <GradientStop Color="White" Offset="0" />
+                            <GradientStop Color="Transparent" Offset="1" />
+                        </LinearGradientBrush>
+                    </Border.Background>
+                </Border>
+                <Border IsHitTestVisible="False">
+                    <Border.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#00000000" Offset="0" />
+                            <GradientStop Color="Black" Offset="1" />
+                        </LinearGradientBrush>
+                    </Border.Background>
+                </Border>
+                <Border CornerRadius="1" BorderThickness="1" IsHitTestVisible="False">
+                    <Border.BorderBrush>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#80000000" Offset="0" />
+                            <GradientStop Color="#40000000" Offset="1" />
+                        </LinearGradientBrush>
+                    </Border.BorderBrush>
+                </Border>
+                <Canvas IsHitTestVisible="False" Margin="-3">
+                    <Path Canvas.Left="{Binding SatIndicatorPosition, RelativeSource={RelativeSource TemplatedParent}}" Canvas.Top="{Binding ValIndicatorPosition, RelativeSource={RelativeSource TemplatedParent}}" x:Name="SatValIndicator" Data="M0,3 L3,0 L6,3 L3,6 Z" Stroke="{DynamicResource Foreground}" Fill="{DynamicResource DarkBackground}">
+                        <Path.Effect>
+                            <DropShadowEffect ShadowDepth="1" BlurRadius="1" Opacity="0.5" />
+                        </Path.Effect>
+                    </Path>
+                </Canvas>
+            </Grid>
+        </Border>
+        
+        <Grid Grid.Column="1" Margin="0,5,5,5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Grid Grid.ColumnSpan="8">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Border x:Name="HGradientBorder" BorderThickness="1" Height="30" Margin="0,0,10,0" CornerRadius="2">
+                    <Border.BorderBrush>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFFFFFFF" Offset="0" />
+                            <GradientStop Color="#80FFFFFF" Offset="1" />
+                        </LinearGradientBrush>
+                    </Border.BorderBrush>
+
+                    <Grid>
+                        <Image x:Name="PART_HueImage" Stretch="Fill" Source="/Tweaky;component/hue.png" Height="8" />
+                        <Canvas IsHitTestVisible="False" Margin="-3">
+                            <Path Canvas.Left="{Binding HueIndicatorPosition, RelativeSource={RelativeSource TemplatedParent}}" x:Name="HueIndicator" Data="M0,0 L6,0 L3,3 Z M3,3 L3,31 M3,31 L0,34 L6,34 Z" Stroke="{DynamicResource Foreground}" Fill="{DynamicResource DarkBackground}">
+                                <Path.Effect>
+                                    <DropShadowEffect ShadowDepth="1" BlurRadius="1" Opacity="0.5" Color="White" />
+                                </Path.Effect>
+                            </Path>
+                        </Canvas>
+                        <Border CornerRadius="1" BorderThickness="1" IsHitTestVisible="False">
+                            <Border.BorderBrush>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#80000000" Offset="0" />
+                                    <GradientStop Color="#40000000" Offset="1" />
+                                </LinearGradientBrush>
+                            </Border.BorderBrush>
+                        </Border>
+                    </Grid>
+                </Border>
+                <Border x:Name="ColorPreviewBorder" BorderThickness="1" Width="200" Height="30" Grid.Column="1" CornerRadius="2">
+                    <Border.BorderBrush>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFFFFFFF" Offset="0" />
+                            <GradientStop Color="#80FFFFFF" Offset="1" />
+                        </LinearGradientBrush>
+                    </Border.BorderBrush>
+                    <Border CornerRadius="1" BorderThickness="1">
+                        <Border.BorderBrush>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#80000000" Offset="0" />
+                                <GradientStop Color="#40000000" Offset="1" />
+                            </LinearGradientBrush>
+                        </Border.BorderBrush>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <Border Background="White"  Grid.Row="0" Grid.Column="0" />
+                            <Border Background="Silver" Grid.Row="1" Grid.Column="0" />
+                            <Border Background="Silver" Grid.Row="0" Grid.Column="1" />
+                            <Border Background="White"  Grid.Row="1" Grid.Column="1" />
+                            <Border Background="White"  Grid.Row="0" Grid.Column="2" />
+                            <Border Background="Silver" Grid.Row="1" Grid.Column="2"  />
+                            <Border Background="Silver" Grid.Row="0" Grid.Column="3" />
+                            <Border Background="White"  Grid.Row="1" Grid.Column="3" />
+                            <Border Background="White"  Grid.Row="0" Grid.Column="4" />
+                            <Border Background="Silver" Grid.Row="1" Grid.Column="4" />
+                            <Border Background="Silver" Grid.Row="0" Grid.Column="5" />
+                            <Border Background="White"  Grid.Row="1" Grid.Column="5" />
+                            <Border Background="White"  Grid.Row="0" Grid.Column="6" />
+                            <Border Background="Silver" Grid.Row="1" Grid.Column="6" />
+                            <Border Background="Silver" Grid.Row="0" Grid.Column="7" />
+                            <Border Background="White"  Grid.Row="1" Grid.Column="7" />
+                            <Border Background="White"  Grid.Row="0" Grid.Column="8" />
+                            <Border Background="Silver" Grid.Row="1" Grid.Column="8"  />
+                            <Border Background="Silver" Grid.Row="0" Grid.Column="9" />
+                            <Border Background="White"  Grid.Row="1" Grid.Column="9" />
+                            <Border Background="White"  Grid.Row="0" Grid.Column="10" />
+                            <Border Background="Silver" Grid.Row="1" Grid.Column="10" />
+                            <Border Background="Silver" Grid.Row="0" Grid.Column="11" />
+                            <Border Background="White"  Grid.Row="1" Grid.Column="11" />
+                            <Border Background="White"  Grid.Row="0" Grid.Column="12" />
+                            <Border Background="Silver" Grid.Row="1" Grid.Column="12" />
+                            <Border Background="Silver" Grid.Row="0" Grid.Column="13" />
+                            <Border Background="White"  Grid.Row="1" Grid.Column="13" />
+                            <Border Grid.RowSpan="2" Grid.ColumnSpan="7" Background="{Binding ExternalBackgroundBrush, RelativeSource={RelativeSource TemplatedParent}}" Cursor="UpArrow" x:Name="PART_OriginalColorBorder" />
+                            <Border Grid.RowSpan="2" Grid.Column="7" Grid.ColumnSpan="7" Background="{Binding BackgroundBrush, RelativeSource={RelativeSource TemplatedParent}}" />
+                        </Grid>
+                    </Border>
+                </Border>
+            </Grid>
+            <Border Grid.Row="1" Height="10" />
+            <TextBlock Grid.Row="3" Margin="2" VerticalAlignment="Center">Red:</TextBlock>
+            <Slider Grid.Row="3" Margin="2" Value="{Binding Red, RelativeSource={RelativeSource TemplatedParent}, Mode=TwoWay}" Grid.Column="1" />
+            <TextBlock Grid.Row="3" Margin="2" Grid.Column="2" VerticalAlignment="Center">Green:</TextBlock>
+            <Slider Grid.Row="3" Margin="2" Value="{Binding Green, RelativeSource={RelativeSource TemplatedParent}, Mode=TwoWay}" Grid.Column="3" />
+            <TextBlock Grid.Row="3" Margin="2" Grid.Column="4" VerticalAlignment="Center">Blue:</TextBlock>
+            <Slider Grid.Row="3" Margin="2" Value="{Binding Blue, RelativeSource={RelativeSource TemplatedParent}, Mode=TwoWay}" Grid.Column="5" />
+            <TextBlock Visibility="{Binding AlphaGuiVisibility, RelativeSource={RelativeSource TemplatedParent}}" Grid.Row="3" Margin="2" Grid.Column="6" VerticalAlignment="Center">Alpha:</TextBlock>
+            <Slider Visibility="{Binding AlphaGuiVisibility, RelativeSource={RelativeSource TemplatedParent}}" Grid.Row="3" Margin="2" Value="{Binding Alpha, RelativeSource={RelativeSource TemplatedParent}, Mode=TwoWay}" Grid.Column="7" />
+        </Grid>
+    </Grid>
+</UserControl>

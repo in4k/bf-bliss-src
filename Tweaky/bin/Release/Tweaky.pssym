@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Symbols xmlns="http://schemas.postsharp.org/2.0/symbols">
+  <Class Class="#1=T:[Tweaky]Tweaky.ExecuteAfterAttribute">
+    <Instance Declaration="#2=M:[Tweaky]Tweaky.DataViewModel::set_GradeLiftNight(System.Drawing.Color)" Id="9454d4e09652f596">
+      <Target>
+        <JoinPoint Description="#3=Wrapped by advice(s) OnEntry, OnSuccess, OnException, OnExit" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#4=M:[Tweaky]Tweaky.DataViewModel::set_GradeLiftDay(System.Drawing.Color)" Id="9454d4e0ab7beecb">
+      <Target>
+        <JoinPoint Description="#3" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#5=M:[Tweaky]Tweaky.DataViewModel::set_GradeGammaNight(System.Drawing.Color)" Id="9454d4e08d201b44">
+      <Target>
+        <JoinPoint Description="#3" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#6=M:[Tweaky]Tweaky.DataViewModel::set_GradeGammaDay(System.Drawing.Color)" Id="9454d4e00af46eed">
+      <Target>
+        <JoinPoint Description="#3" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#7=M:[Tweaky]Tweaky.DataViewModel::set_GradeGainNight(System.Drawing.Color)" Id="9454d4e07a595758">
+      <Target>
+        <JoinPoint Description="#3" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#8=M:[Tweaky]Tweaky.DataViewModel::set_GradeGainDay(System.Drawing.Color)" Id="9454d4e06ea09047">
+      <Target>
+        <JoinPoint Description="#3" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#9=M:[Tweaky]Tweaky.DataViewModel::set_LightDirectionNight([Tweaky]Tweaky.float4)" Id="9454d4e08b0d6467">
+      <Target>
+        <JoinPoint Description="#3" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#10=M:[Tweaky]Tweaky.DataViewModel::set_LightDirectionDay([Tweaky]Tweaky.float4)" Id="9454d4e05cad15ab">
+      <Target>
+        <JoinPoint Description="#3" />
+      </Target>
+    </Instance>
+  </Class>
+  <Class Class="#11=T:[Tweaky]Tweaky.NotifyAttribute">
+    <Instance Declaration="#12=M:[Tweaky]Tweaky.PropertyGrid.PropertyGrid::set_LeftColumn(System.Windows.GridLength)" Id="9454d4e03af5523f">
+      <Target>
+        <JoinPoint Description="#3" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#13=M:[Tweaky]Tweaky.PropertyGrid.PropertyGrid::set_RightColumn(System.Windows.GridLength)" Id="9454d4e00b24f017">
+      <Target>
+        <JoinPoint Description="#3" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#14=M:[Tweaky]Tweaky.PropertyGrid.PropertyGrid::set_Filter(System.String)" Id="9454d4e0b2b07980">
+      <Target>
+        <JoinPoint Description="#3" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#15=M:[Tweaky]Tweaky.PropertyGrid.PropertyGrid::set_SelectedPropertyItem([Tweaky]Tweaky.PropertyGrid.PropertyItem)" Id="9454d4e0b63533e8">
+      <Target>
+        <JoinPoint Description="#3" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#16=M:[Tweaky]Tweaky.PropertyGrid.PropertyGrid::set_ItemsSourceType(System.String)" Id="9454d4e09c6ad212">
+      <Target>
+        <JoinPoint Description="#3" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#17=M:[Tweaky]Tweaky.PropertyGrid.PropertyGrid::set_ItemsSourceName(System.String)" Id="9454d4e05b2f2020">
+      <Target>
+        <JoinPoint Description="#3" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#18=M:[Tweaky]Tweaky.PropertyGrid.PropertyGrid::set_ItemsSource(System.Object)" Id="9454d4e0e4f0056d">
+      <Target>
+        <JoinPoint Description="#3" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#19=M:[Tweaky]Tweaky.PropertyGrid.PropertyItem::set_IsExpanded(System.Boolean)" Id="9454d4e06f94dc97">
+      <Target>
+        <JoinPoint Description="#3" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#20=M:[Tweaky]Tweaky.PropertyGrid.PropertyItem::set_IsSelected(System.Boolean)" Id="9454d4e05d4aed55">
+      <Target>
+        <JoinPoint Description="#3" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#21=M:[Tweaky]Tweaky.PropertyGrid.PropertyItem::set_Value(System.Object)" Id="9454d4e04756e910">
+      <Target>
+        <JoinPoint Description="#3" />
+      </Target>
+    </Instance>
+  </Class>
+</Symbols>
